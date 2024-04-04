@@ -15,24 +15,24 @@ function Sudoku() {
     ]
 
     const getHtmlInfo = (event) => {
-        const clickedElement = event.currentTarget;
+        const clickedElement = event.target;
 
-        // 查找点击的元素在 regionArr 中对应的对象
-        const number = regionArr.find(item => item.number.toString() === clickedElement.getAttribute('data-key'));
+        // 获取点击的元素的 key 属性值
+        const keyValue = clickedElement.getAttribute('key');
 
-        // 打印对应的 number 值
-        console.log(number);
-
+        // 打印 key 属性值
+        console.log(keyValue);
     }
 
     return (
         <div className="sudoku-grid">
             {/* 生成九宫格 */}
             {regionArr.map((value) => (
-                <div key={value.number} className="sudoku-row" onClick={getHtmlInfo} data-key={value.number}>
+                <div key={`row-${value.number}`} className="sudoku-row" onClick={getHtmlInfo}>
                     <ul>
                         <li className="sudoku-cell">
                             <ul>
+                                {value.number}
                                 <li className="god">八神：<span><InfoSelect type="god" /></span></li>
                                 <li className="star">九星：<span><InfoSelect type="star" /></span></li>
                                 <li className="door">八门：<span><InfoSelect type="door" /></span></li>

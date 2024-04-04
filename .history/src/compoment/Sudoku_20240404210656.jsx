@@ -14,25 +14,19 @@ function Sudoku() {
         { number: 6, area: "震" }
     ]
 
-    const getHtmlInfo = (event) => {
-        const clickedElement = event.currentTarget;
-
-        // 查找点击的元素在 regionArr 中对应的对象
-        const number = regionArr.find(item => item.number.toString() === clickedElement.getAttribute('data-key'));
-
-        // 打印对应的 number 值
-        console.log(number);
-
+    const getHtmlInfo = (target) => {
+        console.log(target)
     }
 
     return (
         <div className="sudoku-grid">
             {/* 生成九宫格 */}
             {regionArr.map((value) => (
-                <div key={value.number} className="sudoku-row" onClick={getHtmlInfo} data-key={value.number}>
+                <div key={`row-${value.number}`} className="sudoku-row" onClick={getHtmlInfo}>
                     <ul>
                         <li className="sudoku-cell">
                             <ul>
+                                {value.number}
                                 <li className="god">八神：<span><InfoSelect type="god" /></span></li>
                                 <li className="star">九星：<span><InfoSelect type="star" /></span></li>
                                 <li className="door">八门：<span><InfoSelect type="door" /></span></li>
