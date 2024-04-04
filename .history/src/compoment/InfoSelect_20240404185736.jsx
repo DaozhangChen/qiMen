@@ -1,0 +1,19 @@
+import { Select } from "antd";
+import 
+
+const InfoSelect = () => {
+    const godArr = ["值符", "腾蛇", "太阴", "六合", "白虎", "玄武", "九地", "九天"]
+    const option = godArr.map((value) => {
+        const obj = {}
+        obj.value = value
+        obj.label = value
+        return obj
+    })
+    return (
+        <>
+            <Select style={{ width: 100 }} options={option} />
+        </>
+    )
+}
+
+export default InfoSelect

@@ -1,0 +1,20 @@
+.sudoku-grid {
+    border: 1px solid blue;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "top-left top-center top-right"
+        "middle-left middle-center middle-right"
+        "bottom-left bottom-center bottom-right";
+}
+
+.sudoku-row {
+    display: flex;
+}
+
+.suduku-cell {
+    border: 1px solid red;
+}
