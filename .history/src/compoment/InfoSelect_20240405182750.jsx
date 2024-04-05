@@ -11,7 +11,7 @@ const InfoSelect = ({ type, setDetailInfo, area }) => {
         if (area === "header") {
             setDetailInfo(originObj => {
                 originObj[type] = value
-                return { ...originObj }
+                return originObj
             })
         } else {
             setDetailInfo(originArr => {

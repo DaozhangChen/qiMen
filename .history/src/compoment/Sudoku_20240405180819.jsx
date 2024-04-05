@@ -1,8 +1,7 @@
 import "../style/Sudoku.css"
 import InfoSelect from "./InfoSelect"
 import { useState } from "react"
-import HeaderInfo from "./HeaderInfo"
-import { useEffect } from "react"
+import HeaderInfo from "./HeaderLabel"
 
 function Sudoku() {
     const regionArr = [
@@ -26,17 +25,12 @@ function Sudoku() {
         headerTimeStem: null
     }
     const [detailInfo, setDetailInfo] = useState(regionArr)
-    const [headerInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)
-    useEffect(() => {
-        console.log("11", detailInfo)
-        return () => {
-            console.log("22", detailInfo)
-        }
-    }, [detailInfo])
+    const [HeaderInfo, setHeaderInfo] = useState(baseHeaderInfo)
+
 
     return (
         <>
-            <HeaderInfo setHeaderInfo={setHeaderInfoObj} />
+            <HeaderInfo setHeaderInfo={setHeaderInfo} />
             <div className="sudoku-grid">
                 {/* 生成九宫格 */}
                 {detailInfo.map((value) => (

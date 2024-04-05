@@ -2,7 +2,6 @@ import "../style/Sudoku.css"
 import InfoSelect from "./InfoSelect"
 import { useState } from "react"
 import HeaderInfo from "./HeaderInfo"
-import { useEffect } from "react"
 
 function Sudoku() {
     const regionArr = [
@@ -26,13 +25,8 @@ function Sudoku() {
         headerTimeStem: null
     }
     const [detailInfo, setDetailInfo] = useState(regionArr)
-    const [headerInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)
-    useEffect(() => {
-        console.log("11", detailInfo)
-        return () => {
-            console.log("22", detailInfo)
-        }
-    }, [detailInfo])
+    const [HeaderInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)
+
 
     return (
         <>

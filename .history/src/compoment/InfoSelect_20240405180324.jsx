@@ -10,8 +10,7 @@ const InfoSelect = ({ type, setDetailInfo, area }) => {
         //设置全局value
         if (area === "header") {
             setDetailInfo(originObj => {
-                originObj[type] = value
-                return { ...originObj }
+
             })
         } else {
             setDetailInfo(originArr => {
