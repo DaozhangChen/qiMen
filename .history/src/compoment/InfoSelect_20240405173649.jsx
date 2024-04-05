@@ -23,6 +23,7 @@ const InfoSelect = ({ type, setDetailInfo, area }) => {
         })
     }
 
+
     return (
         <>
             <Select style={{ width: 100 }} options={option} onChange={setValue} />
