@@ -3,7 +3,6 @@ import InfoSelect from "./InfoSelect"
 import { DatePicker } from 'antd';
 // eslint-disable-next-line react/prop-types
 const HeaderInfo = ({ setHeaderInfo }) => {
-
     const timeChange = (time, dateString) => {
         setHeaderInfo((value) => {
             return { ...value, headerTime: dateString }
@@ -28,18 +27,15 @@ const HeaderInfo = ({ setHeaderInfo }) => {
                     </div>
                     <div>旬空：
                         <span>
-                            <InfoSelect type="headerYearNull" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerMonthNull" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerDayNull" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerTimeNull" setDetailInfo={setHeaderInfo} area="header" />
+                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
+                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
+                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
+                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
                         </span>
                     </div>
-                    <div>
-                        <span>
-                            <InfoSelect type="curPattern" setDetailInfo={setHeaderInfo} area="header" />
-                        </span>
-                    </div>
+                    <div>3</div>
                 </div>
+                <div>未知</div>
             </div>
         </>
     )

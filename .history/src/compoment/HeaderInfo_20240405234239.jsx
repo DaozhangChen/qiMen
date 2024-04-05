@@ -34,12 +34,9 @@ const HeaderInfo = ({ setHeaderInfo }) => {
                             <InfoSelect type="headerTimeNull" setDetailInfo={setHeaderInfo} area="header" />
                         </span>
                     </div>
-                    <div>
-                        <span>
-                            <InfoSelect type="curPattern" setDetailInfo={setHeaderInfo} area="header" />
-                        </span>
-                    </div>
+                    <div>3</div>
                 </div>
+                <div>未知</div>
             </div>
         </>
     )

@@ -5,6 +5,7 @@ import setOption from "../toolFunction/setOption"
 const InfoSelect = ({ type, setDetailInfo, area }) => {
     const option = setOption(type)
 
+
     const setValue = (value) => {
         //设置全局value
         if (area === "header") {
@@ -29,7 +30,7 @@ const InfoSelect = ({ type, setDetailInfo, area }) => {
 
     return (
         <>
-            <Select style={{ width: 100 }} options={option} onChange={setValue} showSearch />
+            <Select style={{ width: 100 }} options={option} onChange={setValue} />
         </>
     )
 }

@@ -23,12 +23,7 @@ function Sudoku() {
         headerYearStem: null,
         headerMonthStem: null,
         headerDayStem: null,
-        headerTimeStem: null,
-        headerYearNull: null,
-        headerMonthNull: null,
-        headerDayNull: null,
-        headerTimeNull: null,
-        curPattern: null
+        headerTimeStem: null
     }
     const [detailInfo, setDetailInfo] = useState(regionArr)
     const [headerInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)

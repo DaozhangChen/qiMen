@@ -11,7 +11,6 @@ function getAllSexagenaryBranches() {
     }
     return finalItems
 }
-const allStem = getAllSexagenaryBranches()
 
 
-export default allStem
+export default getAllSexagenaryBranches()

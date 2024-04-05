@@ -15,10 +15,7 @@ const setOption = (type) => {
     const doorArr = ["休门", "生门", "伤门", "杜门", "景门", "死门", "惊门", "开门"]
     const stemArr = ["戊", "己", "庚", "辛", "壬", "癸", "丁", "丙", "乙"]
     const downNullStem = ["子丑", "寅卯", "辰巳", "午未", "申酉", "戌亥"]
-    const pattern = [
-        "阳遁一局", "阳遁二局", "阳遁三局", "阳遁四局", "阳遁五局", "阳遁六局", "阳遁七局", "阳遁八局", "阳遁九局",
-        "阴遁一局", "阴遁二局", "阴遁三局", "阴遁四局", "阴遁五局", "阴遁六局", "阴遁七局", "阴遁八局", "阴遁九局"
-    ]
+
     const resultMap = {
         "god": setupOption(godArr),
         "star": setupOption(starArr),
@@ -34,8 +31,7 @@ const setOption = (type) => {
         "headerYearNull": setupOption(downNullStem),
         "headerMonthNull": setupOption(downNullStem),
         "headerDayNull": setupOption(downNullStem),
-        "headerTimeNull": setupOption(downNullStem),
-        "curPattern": setupOption(pattern)
+        "headerTimeNull": setupOption(downNullStem)
     }
     return resultMap[type]
 }

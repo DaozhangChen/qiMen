@@ -23,12 +23,7 @@ function Sudoku() {
         headerYearStem: null,
         headerMonthStem: null,
         headerDayStem: null,
-        headerTimeStem: null,
-        headerYearNull: null,
-        headerMonthNull: null,
-        headerDayNull: null,
-        headerTimeNull: null,
-        curPattern: null
+        headerTimeStem: null
     }
     const [detailInfo, setDetailInfo] = useState(regionArr)
     const [headerInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)
@@ -41,7 +36,7 @@ function Sudoku() {
 
     return (
         <>
-            <HeaderInfo setHeaderInfo={setHeaderInfoObj} />
+            {/* <HeaderInfo setHeaderInfo={setHeaderInfoObj} /> */}
             <div className="sudoku-grid">
                 {/* 生成九宫格 */}
                 {detailInfo.map((value) => (
@@ -50,10 +45,10 @@ function Sudoku() {
                             <li className="sudoku-cell">
                                 <ul>
                                     <li className="god">八神：<span><InfoSelect type="god" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
-                                    <li className="star">九星：<span><InfoSelect type="star" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
+                                    {/* <li className="star">九星：<span><InfoSelect type="star" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
                                     <li className="door">八门：<span><InfoSelect type="door" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
                                     <li className="upStem">天盘干支：<span><InfoSelect type="upStem" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
-                                    <li className="downStem">地盘干支：<span><InfoSelect type="downStem" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
+                                    <li className="downStem">地盘干支：<span><InfoSelect type="downStem" setDetailInfo={setDetailInfo} area={value.number} /></span></li> */}
                                 </ul>
                             </li>
                         </ul>
