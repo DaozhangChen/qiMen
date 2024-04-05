@@ -20,19 +20,9 @@ const HeaderInfo = ({ setHeaderInfo }) => {
                     <div>干支：
                         <span>
                             <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
                         </span>
                     </div>
-                    <div>旬空：
-                        <span>
-                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
-                            <InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" />
-                        </span>
-                    </div>
+                    <div>旬空：</div>
                     <div>3</div>
                 </div>
                 <div>未知</div>
