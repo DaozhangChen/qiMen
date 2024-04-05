@@ -3,11 +3,6 @@ import InfoSelect from "./InfoSelect"
 import { DatePicker } from 'antd';
 // eslint-disable-next-line react/prop-types
 const HeaderInfo = ({ setHeaderInfo }) => {
-    const timeChange = (time, dateString) => {
-        setHeaderInfo((value) => {
-            return { ...value, headerTime: dateString }
-        })
-    }
     return (
         <>
             <div className="headerWrapper">
@@ -16,7 +11,7 @@ const HeaderInfo = ({ setHeaderInfo }) => {
                     <div>值使门：<span><InfoSelect type="headerDoor" setDetailInfo={setHeaderInfo} area="header" /></span></div>
                 </div>
                 <div>
-                    <div>选择时间：<span><DatePicker showTime onChange={timeChange} /></span></div>
+                    <div><DatePicker /></div>
                     <div>2</div>
                     <div>3</div>
                 </div>

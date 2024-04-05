@@ -28,11 +28,11 @@ function Sudoku() {
     const [detailInfo, setDetailInfo] = useState(regionArr)
     const [headerInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)
     useEffect(() => {
-        console.log("11", headerInfoObj)
+        console.log("11", detailInfo)
         return () => {
-            console.log("22", headerInfoObj)
+            console.log("22", detailInfo)
         }
-    }, [headerInfoObj])
+    }, [detailInfo])
 
     return (
         <>

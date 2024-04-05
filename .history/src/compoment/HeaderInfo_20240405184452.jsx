@@ -3,9 +3,9 @@ import InfoSelect from "./InfoSelect"
 import { DatePicker } from 'antd';
 // eslint-disable-next-line react/prop-types
 const HeaderInfo = ({ setHeaderInfo }) => {
-    const timeChange = (time, dateString) => {
+    const timeChange = () => {
         setHeaderInfo((value) => {
-            return { ...value, headerTime: dateString }
+            return { ...value, }
         })
     }
     return (
