@@ -7,19 +7,7 @@ const InfoSelect = ({ type, setDetailInfo, area }) => {
 
 
     const setValue = (value) => {
-        setDetailInfo(originArr => {
-            const newArr = originArr.map((item) => {
-                if (item.number === area) {
-                    console.log(type)
-                    item[type] = value
-                    return item
-                } else {
-                    return item
-                }
-            })
-            console.log(newArr)
-            return newArr
-        })
+        console.log(area)
     }
 
     return (

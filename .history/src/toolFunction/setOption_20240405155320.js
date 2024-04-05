@@ -17,8 +17,7 @@ const setOption = (type) => {
         "god": setupOption(godArr),
         "star": setupOption(starArr),
         "door": setupOption(doorArr),
-        "upStem": setupOption(stemArr),
-        "downStem": setupOption(stemArr)
+        "stem": setupOption(stemArr)
     }
     return resultMap[type]
 }

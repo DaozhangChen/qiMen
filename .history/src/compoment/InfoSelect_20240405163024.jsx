@@ -10,15 +10,9 @@ const InfoSelect = ({ type, setDetailInfo, area }) => {
         setDetailInfo(originArr => {
             const newArr = originArr.map((item) => {
                 if (item.number === area) {
-                    console.log(type)
-                    item[type] = value
-                    return item
-                } else {
-                    return item
+                    return { number: area, }
                 }
             })
-            console.log(newArr)
-            return newArr
         })
     }
 

@@ -4,15 +4,15 @@ import { useState } from "react"
 
 function Sudoku() {
     const regionArr = [
-        { number: 4, area: "巽" },
-        { number: 9, area: "离" },
-        { number: 2, area: "坤" },
+        { number: 4, area: "震" },
+        { number: 9, area: "震" },
+        { number: 2, area: "震" },
         { number: 3, area: "震" },
-        { number: 5, area: "中" },
-        { number: 7, area: "兑" },
-        { number: 8, area: "艮" },
-        { number: 1, area: "坎" },
-        { number: 6, area: "乾" }
+        { number: 5, area: "震" },
+        { number: 7, area: "震" },
+        { number: 8, area: "震" },
+        { number: 1, area: "震" },
+        { number: 6, area: "震" }
     ]
     const [detailInfo, setDetailInfo] = useState(regionArr)
 
