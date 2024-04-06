@@ -1,0 +1,3 @@
+const changeInfo = (type, value) => {
+
+}
