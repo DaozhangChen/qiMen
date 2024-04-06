@@ -1,4 +1,3 @@
-import changeAnotherStem from "./changeAnotherStem"
 const changeInfo = (action, type, area, value, func) => {
     if (area === "header") {
         func(originObj => {
@@ -13,6 +12,9 @@ const changeInfo = (action, type, area, value, func) => {
     } else {
         func(originArr => {
             const newArr = originArr.map((item) => {
+                if (area === 5 && item.star === "天芮星" && action === "change" && type === "") {
+
+                }
                 if (item.number === area) {
                     if (action === "change") {
                         item[type] = value
@@ -25,8 +27,8 @@ const changeInfo = (action, type, area, value, func) => {
                     return item
                 }
             })
-            const finalItems = changeAnotherStem(newArr)
-            return finalItems
+
+            return newArr
         })
     }
 }

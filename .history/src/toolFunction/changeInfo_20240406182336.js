@@ -25,8 +25,8 @@ const changeInfo = (action, type, area, value, func) => {
                     return item
                 }
             })
-            const finalItems = changeAnotherStem(newArr)
-            return finalItems
+            changeAnotherStem(newArr)
+            return newArr
         })
     }
 }

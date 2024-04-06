@@ -6,15 +6,15 @@ import { useEffect } from "react"
 
 function Sudoku() {
     const regionArr = [
-        { number: 4, area: "巽", initDownStem1: "巳", initDownStem2: "辰", anotherUpStem: null, anotherDownStem: null },
-        { number: 9, area: "离", initDownStem1: "午", anotherUpStem: null, anotherDownStem: null },
-        { number: 2, area: "坤", initDownStem1: "未", initDownStem2: "申", anotherUpStem: null, anotherDownStem: null },
-        { number: 3, area: "震", initDownStem1: "卯", anotherUpStem: null, anotherDownStem: null },
+        { number: 4, area: "巽", initDownStem1: "巳", initDownStem2: "辰" },
+        { number: 9, area: "离", initDownStem1: "午" },
+        { number: 2, area: "坤", initDownStem1: "未", initDownStem2: "申" },
+        { number: 3, area: "震", initDownStem1: "卯" },
         { number: 5, area: "中" },
-        { number: 7, area: "兑", initDownStem1: "酉", anotherUpStem: null, anotherDownStem: null },
-        { number: 8, area: "艮", initDownStem1: "丑", initDownStem2: "寅", anotherUpStem: null, anotherDownStem: null },
-        { number: 1, area: "坎", initDownStem1: "子", anotherUpStem: null, anotherDownStem: null },
-        { number: 6, area: "乾", initDownStem1: "亥", initDownStem2: "戌", anotherUpStem: null, anotherDownStem: null }
+        { number: 7, area: "兑", initDownStem1: "酉" },
+        { number: 8, area: "艮", initDownStem1: "丑", initDownStem2: "寅" },
+        { number: 1, area: "坎", initDownStem1: "子" },
+        { number: 6, area: "乾", initDownStem1: "亥", initDownStem2: "戌" }
     ]
     const baseHeaderInfo = {
         headerStar: null,
