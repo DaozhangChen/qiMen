@@ -20,15 +20,6 @@
     margin: 5px 0px;
 }
 
-div[class^="downStem"] {
-    text-align: center;
-    line-height: 22px;
-    width: 22px;
-    height: 22px;
-    background-color: gray;
-    border-radius: 50%;
-}
-
 .downStem1-4,
 .downStem1-9,
 .downStem1-2 {
@@ -36,23 +27,7 @@ div[class^="downStem"] {
     transform: translateY(-120px);
 }
 
-.downStem1-3,
-.downStem2-4,
-.downStem2-8 {
+.downStem1-3 {
     position: absolute;
     transform: translateX(-120px);
-}
-
-.downStem1-7,
-.downStem2-2,
-.downStem2-6 {
-    position: absolute;
-    transform: translateX(120px);
-}
-
-.downStem1-1,
-.downStem1-8,
-.downStem1-6 {
-    position: absolute;
-    transform: translateY(120px);
 }

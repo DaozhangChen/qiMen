@@ -20,12 +20,8 @@
     margin: 5px 0px;
 }
 
-div[class^="downStem"] {
-    text-align: center;
-    line-height: 22px;
-    width: 22px;
-    height: 22px;
-    background-color: gray;
+div[class~="downStem"] {
+    border: 1px solid red;
     border-radius: 50%;
 }
 

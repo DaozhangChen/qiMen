@@ -1,0 +1,28 @@
+.sudoku-grid {
+    border: 1px solid blue;
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.sudoku-row {
+    display: flex;
+    border: 1px solid green;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sudoku-cell>li {
+    margin: 5px 0px;
+}
+
+.downStem1-4,
+.downStem1-9,
+.downStem1-2 {
+    position: absolute;
+    transform: translateY(-150px);
+}

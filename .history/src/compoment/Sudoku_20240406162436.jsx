@@ -51,7 +51,7 @@ function Sudoku() {
                             value.number !== 5 ? <div className={"downStem1-" + value.number}>{value.initDownStem1}</div> : null
                         }
                         {
-                            value.number % 2 === 0 ? <div className={"downStem2-" + value.number}>{value.initDownStem2}</div> : null
+                            value.number % 2 === 0 ? <div className={"downStem2-" + value.number}>2</div> : null
                         }
                         <div>{value.number}</div>
                         <ul>

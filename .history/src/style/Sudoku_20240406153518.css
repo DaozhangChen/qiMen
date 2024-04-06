@@ -1,0 +1,22 @@
+.sudoku-grid {
+    border: 1px solid blue;
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.sudoku-row {
+    display: flex;
+    border: 1px solid green;
+    align-items: center;
+    justify-content: center;
+}
+
+.sudoku-cell>li {
+    margin: 5px 0px;
+}
+
+.task {}

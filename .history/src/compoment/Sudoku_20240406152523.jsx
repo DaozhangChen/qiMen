@@ -6,15 +6,15 @@ import { useEffect } from "react"
 
 function Sudoku() {
     const regionArr = [
-        { number: 4, area: "巽", initDownStem1: "巳", initDownStem2: "辰" },
-        { number: 9, area: "离", initDownStem1: "午" },
-        { number: 2, area: "坤", initDownStem1: "未", initDownStem2: "申" },
-        { number: 3, area: "震", initDownStem1: "卯" },
+        { number: 4, area: "巽" },
+        { number: 9, area: "离" },
+        { number: 2, area: "坤" },
+        { number: 3, area: "震" },
         { number: 5, area: "中" },
-        { number: 7, area: "兑", initDownStem1: "酉" },
-        { number: 8, area: "艮", initDownStem1: "丑", initDownStem2: "寅" },
-        { number: 1, area: "坎", initDownStem1: "子" },
-        { number: 6, area: "乾", initDownStem1: "亥", initDownStem2: "戌" }
+        { number: 7, area: "兑" },
+        { number: 8, area: "艮" },
+        { number: 1, area: "坎" },
+        { number: 6, area: "乾" }
     ]
     const baseHeaderInfo = {
         headerStar: null,
@@ -47,13 +47,6 @@ function Sudoku() {
                 {/* 生成九宫格 */}
                 {regionArr.map((value) => (
                     <div key={value.number} className="sudoku-row" data-key={value.number}>
-                        {
-                            value.number !== 5 ? <div className={"downStem1-" + value.number}>{value.initDownStem1}</div> : null
-                        }
-                        {
-                            value.number % 2 === 0 ? <div className={"downStem2-" + value.number}>{value.initDownStem2}</div> : null
-                        }
-                        <div>{value.number}</div>
                         <ul>
                             <li className="sudoku-cell">
                                 <ul>
