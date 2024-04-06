@@ -6,15 +6,15 @@ import { useEffect } from "react"
 
 function Sudoku() {
     const regionArr = [
-        { number: 4, area: "巽", initDownStem1: "巳", initDownStem2: "辰", anotherUpStem: null, anotherDownStem: null, baseAttribute: "木" },
-        { number: 9, area: "离", initDownStem1: "午", anotherUpStem: null, anotherDownStem: null, baseAttribute: "火" },
-        { number: 2, area: "坤", initDownStem1: "未", initDownStem2: "申", anotherUpStem: null, anotherDownStem: null, baseAttribute: "土" },
-        { number: 3, area: "震", initDownStem1: "卯", anotherUpStem: null, anotherDownStem: null, baseAttribute: "木" },
-        { number: 5, area: "中", baseAttribute: "土" },
-        { number: 7, area: "兑", initDownStem1: "酉", anotherUpStem: null, anotherDownStem: null, baseAttribute: "金" },
-        { number: 8, area: "艮", initDownStem1: "丑", initDownStem2: "寅", anotherUpStem: null, anotherDownStem: null, baseAttribute: "土" },
-        { number: 1, area: "坎", initDownStem1: "子", anotherUpStem: null, anotherDownStem: null, baseAttribute: "水" },
-        { number: 6, area: "乾", initDownStem1: "亥", initDownStem2: "戌", anotherUpStem: null, anotherDownStem: null, baseAttribute: "金" }
+        { number: 4, area: "巽", initDownStem1: "巳", initDownStem2: "辰", anotherUpStem: null, anotherDownStem: null, baseAttribute: "" },
+        { number: 9, area: "离", initDownStem1: "午", anotherUpStem: null, anotherDownStem: null },
+        { number: 2, area: "坤", initDownStem1: "未", initDownStem2: "申", anotherUpStem: null, anotherDownStem: null },
+        { number: 3, area: "震", initDownStem1: "卯", anotherUpStem: null, anotherDownStem: null },
+        { number: 5, area: "中" },
+        { number: 7, area: "兑", initDownStem1: "酉", anotherUpStem: null, anotherDownStem: null },
+        { number: 8, area: "艮", initDownStem1: "丑", initDownStem2: "寅", anotherUpStem: null, anotherDownStem: null },
+        { number: 1, area: "坎", initDownStem1: "子", anotherUpStem: null, anotherDownStem: null },
+        { number: 6, area: "乾", initDownStem1: "亥", initDownStem2: "戌", anotherUpStem: null, anotherDownStem: null }
     ]
     const baseHeaderInfo = {
         headerStar: null,
