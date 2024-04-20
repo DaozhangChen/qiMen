@@ -34,7 +34,7 @@ function Sudoku() {
     }
     const [detailInfo, setDetailInfo] = useState(regionArr)
     const [headerInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)
-    const [curArea, setCurArea] = useState(null)
+    const curArea = useRef(null)
 
     // useEffect(() => {
     //     console.log("11", detailInfo)
@@ -42,13 +42,10 @@ function Sudoku() {
     //         console.log("22", detailInfo)
     //     }
     // }, [detailInfo])
-    // const changeCurArea = (event) => {
-    //     console.log(event.target)
-    // }
     const changeCurArea = (event) => {
-        const curKey = event.currentTarget.getAttribute('data-key')
-        setCurArea(curKey)
+        console.log(event.target)
     }
+
 
     return (
         <>
@@ -81,7 +78,7 @@ function Sudoku() {
                         ))}
                     </div>
                 </div>
-                <AnalyseTab curMainInfo={detailInfo} curArea={curArea} />
+                <AnalyseTab curMainInfo={detailInfo} />
             </div>
         </>
     )

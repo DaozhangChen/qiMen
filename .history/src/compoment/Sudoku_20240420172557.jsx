@@ -34,7 +34,7 @@ function Sudoku() {
     }
     const [detailInfo, setDetailInfo] = useState(regionArr)
     const [headerInfoObj, setHeaderInfoObj] = useState(baseHeaderInfo)
-    const [curArea, setCurArea] = useState(null)
+    const curArea = useRef(null)
 
     // useEffect(() => {
     //     console.log("11", detailInfo)
@@ -45,9 +45,8 @@ function Sudoku() {
     // const changeCurArea = (event) => {
     //     console.log(event.target)
     // }
-    const changeCurArea = (event) => {
-        const curKey = event.currentTarget.getAttribute('data-key')
-        setCurArea(curKey)
+    const onClick = (event) => {
+        console.log(event.target.myKey)
     }
 
     return (
@@ -58,7 +57,7 @@ function Sudoku() {
                     <div className="sudoku-grid">
                         {/* 生成九宫格 */}
                         {regionArr.map((value) => (
-                            <div key={value.number} className="sudoku-row" data-key={value.number} onClick={changeCurArea}>
+                            <div key={value.number} myKey={value.number} className="sudoku-row" onClick={onClick}>
                                 {
                                     value.number !== 5 ? <div className={"downStem1-" + value.number}>{value.initDownStem1}</div> : null
                                 }
@@ -81,7 +80,7 @@ function Sudoku() {
                         ))}
                     </div>
                 </div>
-                <AnalyseTab curMainInfo={detailInfo} curArea={curArea} />
+                <AnalyseTab curMainInfo={detailInfo} />
             </div>
         </>
     )

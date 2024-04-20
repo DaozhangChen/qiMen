@@ -46,7 +46,7 @@ function Sudoku() {
     //     console.log(event.target)
     // }
     const changeCurArea = (event) => {
-        const curKey = event.currentTarget.getAttribute('data-key')
+        const curKey = event.target.getAttribute('data-key')
         setCurArea(curKey)
     }
 
