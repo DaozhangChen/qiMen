@@ -1,0 +1,8 @@
+.analyseWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.analyseWrapper>li {
+    margin: 10px 0;
+}

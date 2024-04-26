@@ -4,7 +4,6 @@ import countTenStem from "../toolFunction/countTenStem"
 import { useRef } from "react"
 import baseAreaInfo from "../toolFunction/baseAreaInfo"
 import doorAnalyseFunc from "../toolFunction/doorAnalyse"
-import "../style/AnalyseTab.css"
 
 // eslint-disable-next-line react/prop-types
 const AnalyseTab = ({ curMainInfo, curArea }) => {
@@ -25,16 +24,9 @@ const AnalyseTab = ({ curMainInfo, curArea }) => {
 
     return (
         <>
-            <ul className="analyseWrapper">
-                <li>{baseAreaInfo[curArea]}</li>
-                <li>{tenStemAnalyse}</li>
-                {doorAnalyse.map((item, i) => {
-                    return (
-                        <li key={i}>{item}</li>
-                    )
-                })
-                }
-            </ul>
+            <div>{baseAreaInfo[curArea]}</div>
+            <div>{tenStemAnalyse}</div>
+            {doorAnalyse.map((item, i) => <div key={i}>{item}</div>)}
         </>
     )
 }

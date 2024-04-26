@@ -4,7 +4,7 @@ import countTenStem from "../toolFunction/countTenStem"
 import { useRef } from "react"
 import baseAreaInfo from "../toolFunction/baseAreaInfo"
 import doorAnalyseFunc from "../toolFunction/doorAnalyse"
-import "../style/AnalyseTab.css"
+import "../style/AnalyseTab"
 
 // eslint-disable-next-line react/prop-types
 const AnalyseTab = ({ curMainInfo, curArea }) => {
