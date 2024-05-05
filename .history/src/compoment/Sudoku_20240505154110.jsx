@@ -69,11 +69,11 @@ function Sudoku() {
                                 <ul>
                                     <li className="sudoku-cell">
                                         <ul>
-                                            {value.number !== 5 ? <li className="god">神：<span><InfoSelect type="god" setDetailInfo={setDetailInfo} area={value.number} /></span></li> : null}
-                                            {value.number !== 5 ? <li className="star">星：<span><InfoSelect type="star" setDetailInfo={setDetailInfo} area={value.number} /></span></li> : null}
-                                            {value.number !== 5 ? <li className="door">门：<span><InfoSelect type="door" setDetailInfo={setDetailInfo} area={value.number} /></span></li> : null}
-                                            <li className="upStem">天：<span><InfoSelect type="upStem" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
-                                            <li className="downStem">地：<span><InfoSelect type="downStem" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
+                                            {value.number !== 5 ? <li className="god">八神：<span><InfoSelect type="god" setDetailInfo={setDetailInfo} area={value.number} /></span></li> : null}
+                                            {value.number !== 5 ? <li className="star">九星：<span><InfoSelect type="star" setDetailInfo={setDetailInfo} area={value.number} /></span></li> : null}
+                                            {value.number !== 5 ? <li className="door">八门：<span><InfoSelect type="door" setDetailInfo={setDetailInfo} area={value.number} /></span></li> : null}
+                                            <li className="upStem">天盘：<span><InfoSelect type="upStem" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
+                                            <li className="downStem">地盘：<span><InfoSelect type="downStem" setDetailInfo={setDetailInfo} area={value.number} /></span></li>
                                         </ul>
                                     </li>
                                 </ul>
